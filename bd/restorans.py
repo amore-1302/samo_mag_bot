@@ -22,7 +22,7 @@ cursor = conn.cursor()
 
 # Создаем таблицу, если она еще не существует
 cursor.execute('''
-CREATE TABLE restaurants (
+CREATE TABLE IF NOT EXISTS restaurants (
     restaurant_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT  NOT NULL,
     address TEXT  NOT NULL
