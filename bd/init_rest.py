@@ -18,7 +18,7 @@ def add_sql():
         conn.close()
 
 def  sel_sql():
-    conn = sqlite3.connect('../mydatabase.db')
+    conn = sqlite3.connect('../samo_mag_bot.db')
     cursor = conn.cursor()
     query = "SELECT * FROM restaurants"
     cursor.execute(query)
